@@ -3,9 +3,9 @@ import { Hero } from '../hero';
 import { HeroService } from '../services/hero.service';
 
 @Component({
-  selector: 'app-dashboard',
-  templateUrl: './dashboard.component.html',
-  styleUrls: ['./dashboard.component.css']
+	selector: 'app-dashboard',
+	templateUrl: './dashboard.component.html',
+	styleUrls: ['./dashboard.component.css']
 })
 export class DashboardComponent implements OnInit {
 
@@ -15,16 +15,16 @@ export class DashboardComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.getHeroes();
+  	this.getHeroes();
   }
 
   ngDoCheck():void{
-    console.log(this.heroes)
+  	console.log(this.heroes);
   }
 
   getHeroes(): void {
-    this.heroService.getHeroes()
-      .subscribe(heroes => this.heroes = heroes.slice(1, 5));
+  	this.heroService.getHeroes()
+  		.subscribe(heroes => this.heroes = heroes.slice(1, 5));
   }
 
 }

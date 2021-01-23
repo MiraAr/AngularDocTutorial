@@ -10,19 +10,19 @@ import { MessageComponent } from './message/message.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    HeroesComponent,
-    HeroDetailComponent,
-    MessageComponent,
-    DashboardComponent
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    FormsModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+	declarations: [
+		AppComponent,
+		HeroesComponent,
+		HeroDetailComponent,
+		MessageComponent,
+		DashboardComponent
+	],
+	imports: [
+		BrowserModule,
+		AppRoutingModule,
+		FormsModule
+	],
+	providers: [],
+	bootstrap: [AppComponent]
 })
 export class AppModule { }
